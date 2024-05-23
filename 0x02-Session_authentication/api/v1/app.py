@@ -4,8 +4,7 @@
 import os
 from os import getenv
 from flask import Flask, jsonify, abort, request
-from flask_cors import (CORS, cross_origin)
-
+from flask_cors import CORS
 from api.v1.views import app_views
 from api.v1.auth.auth import Auth
 from api.v1.auth.basic_auth import BasicAuth
