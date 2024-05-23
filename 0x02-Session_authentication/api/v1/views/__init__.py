@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" DocDocDocDocDocDoc
+"""random comment
 """
 from flask import Blueprint
 
