@@ -7,6 +7,7 @@ from flask import abort, jsonify, request
 from models.user import User
 from api.v1.views import app_views
 
+
 @app_views.route('/auth_session/login', methods=['POST'], strict_slashes=False)
 def login() -> Tuple[str, int]:
     """POST /api/v1/auth_session/login
@@ -44,6 +45,7 @@ def login() -> Tuple[str, int]:
         return res
 
     return jsonify({"error": "wrong password"}), 401
+
 
 @app_views.route('/auth_session/logout', methods=['DELETE'], strict_slashes=False)
 def logout() -> Tuple[str, int]:
